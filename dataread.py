@@ -6,8 +6,7 @@ from collections import OrderedDict
 from scipy.signal import butter, filtfilt, welch
 from scipy import signal
 from scipy.signal import firwin, lfilter, welch, freqz
-from scipy.signal.windows import hamming
-from numpy import convolve
+
 
 
 with open('datastore.csv') as csv_file:
@@ -16,30 +15,20 @@ with open('datastore.csv') as csv_file:
     for j in range(4,118):
           s = rows[j]
           new_list = s[2:770]
-          #print(s)
-          #print(new_list)
           norm = [float(i)/float(max(new_list)) for i in new_list]
           floats = [float(k) for k in norm]
-          #print(max(new_list),'max')
-          #print(norm)
-          #print("Normalised values")
-          #print(floats)
+         
     j=j+1
 
-#print(floats)
+
 
 x_values=np.arange(len(floats))*0.0625
 plt.plot(x_values,floats)
-#plt.xticks(np.arange(0,0.03125), fontsize=8)
 plt.xticks(np.arange(0, len(floats)*0.0625, 2), fontsize=8)
-#print(len(floats)*0.03125)
 plt.xlabel('Time (s)')
 plt.ylabel('Normalized Values')
 plt.show()
 
-
-
-# Apply bandpass filter
 fs = 16  # Sampling rate (Hz)
 f_low = 0.1  # Lower cutoff frequency (Hz)
 f_high = 0.5  # Upper cutoff frequency (Hz)
@@ -55,11 +44,9 @@ plt.ylabel('Filtered Values')
 plt.show()
 
 
-
 #fft specifications
-
 N = 1000
-freq = 16
+freq = 8
 T = 1.0 / freq
 
 #without filter
@@ -110,3 +97,9 @@ prob_freq = psd / np.sum(psd)
 entropy_freq = -np.sum(prob_freq * np.log2(prob_freq))
 print('Energy in freq domain=',energy_freq)
 print('Entropy in freq domain=',entropy_freq)
+
+
+
+
+
+
