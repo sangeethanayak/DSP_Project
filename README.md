@@ -43,7 +43,7 @@ The breath rate estimation results will be displayed or saved to a file, dependi
 <img src="https://github.com/sangeethanayak/DSP_Project/assets/84203911/5ea577c7-115f-46a4-85d5-1fb4fcde0f1c.png" height="300px">
 <img src="https://github.com/sangeethanayak/DSP_Project/assets/84203911/bc94b38d-cded-48b3-8391-1a8f83566fe2.png" height="300px">
 <img src = "https://github.com/sangeethanayak/DSP_Project/assets/84203911/8baee83a-759c-4b0d-b7c5-e84e88611a6e.png" height="300px">
-<img src="https://github.com/sangeethanayak/DSP_Project/assets/84203911/adf1ea70-c03f-4995-8a0e-1b81a1b88b1e.png"  height="100px">
+<img src="https://github.com/sangeethanayak/DSP_Project/assets/84203911/adf1ea70-c03f-4995-8a0e-1b81a1b88b1e.png"  height="200px">
 </p>
 
 
